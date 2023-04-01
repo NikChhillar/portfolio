@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import beni from "../../img/beni.png";
+import about from "../../img/about.jpg";
 import { SectionLayout } from "../../styles/Layout";
 import { useTheme } from "../../context/themeContext";
 import { brief, download, flame, medal, mug } from "../../utils/Icons";
@@ -15,30 +16,34 @@ const About = () => {
     <AboutStyled id="about" theme={theme}>
       <div className="about-info">
         <div className="about-image">
-          <img src={beni} alt="" />
+          <img src={about} alt="" />
         </div>
         <div className="about-content">
           <Title name={"About Me"} />
           <p>
-            I'm a 3rd year CSE Student. Currently working on full stack
-            development using MERN. I've worked on android development using
-            kotlin as well as cross platform development using Flutter.
+            Hi there! My name is Nikhil and I'm a 3rd year CSE Student,
+            curretnly learning full-stack development. I have been working in
+            this field since 2022. I'm skilled in a wide range of programming
+            languages and technologies, including MERN stack,react.js, node.js
+            and Flutter development . I can develop responsive, user-friendly
+            web applications that are optimized for speed and performance. I'm
+            always looking for ways to improve my skills.
           </p>
           <div className="progress-bars">
             <Progressbar
               bg={theme.colorPrimary}
-              service={"Web Development"}
-              progress={"85"}
-            />
-            <Progressbar
-              bg={theme.colorPurple}
-              service="UI/UX Design"
-              progress="93"
+              service={"Full-stack Development"}
+              progress={"90"}
             />
             <Progressbar
               bg={theme.colorGreen}
-              service="Game Development"
-              progress="75"
+              service="Backend Development"
+              progress="85"
+            />
+            <Progressbar
+              bg={theme.colorPurple}
+              service="Flutter Development"
+              progress="80"
             />
           </div>
           <div className="btn-con">
@@ -57,10 +62,10 @@ const About = () => {
         </div>
       </div>
       <div className="stats-container">
-        <Stats icon={flame} number="100+" desc="All completed projects" />
+        <Stats icon={flame} number="20+" desc="All completed projects" />
         <Stats icon={mug} number="200+" desc="Cup of coffee" />
-        <Stats icon={brief} number="5+" desc="Years of experience" />
-        <Stats icon={medal} number="50+" desc="Awards won this year" />
+        <Stats icon={brief} number="2+" desc="Years of learning" />
+        <Stats icon={medal} number="3" desc="Certificates" />
       </div>
       <img src={beni} className="shape1" alt="" />
       <img src={beni} className="shape2" alt="" />
@@ -84,7 +89,7 @@ const AboutStyled = styled(SectionLayout)`
     grid-template-columns: repeat(2, 1fr);
     position: relative;
     z-index: 5;
-    @media screen and (max-width: 1150px) {
+    @media screen and (max-width: 1250px) {
       grid-template-columns: repeat(1, 1fr);
     }
     .about-image {

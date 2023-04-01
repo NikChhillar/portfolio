@@ -84,7 +84,7 @@ const Portfolios = () => {
     <PortfoliosStyled id="portfolios" theme={theme}>
       <Title
         name="Portfolios"
-        desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}
+        desc={"Some of my projects are present here. Check out my github account for all projects"}
       />
       <div className="filter-btns">
         {categories.map((categ, index) => {

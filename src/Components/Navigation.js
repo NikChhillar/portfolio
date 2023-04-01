@@ -19,7 +19,7 @@ const Navigation = ({ toggle }) => {
           <a href="#services">Services</a>
         </li>
         <li className="nav-item">
-          <a href="#experience">Education</a>
+          <a href="#experience">Skills</a>
         </li>
         <li className="nav-item">
           <a href="#portfolios">Projects</a>

@@ -12,34 +12,36 @@ const Services = () => {
     <ServicesStyled id="services" theme={theme}>
       <Title
         name={"Services"}
-        desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}
+        desc={
+          "I'm currently looking for internships for full-stack developer. Last 2 years, I've spent learning different technologies, programming languages and different frameworks to develop web applications."
+        }
       />
       <div className="services-con">
         <ServiceItem
-          icon={design}
-          title={"Web Design"}
+          icon={code}
+          title={"Full stack"}
           bg={theme.colorPurple}
           shadow={theme.shadowPurple}
           desc={
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil suscipit corrupti voluptates magnam, voluptatem aliquid laborum consectetur."
+            "I can create a full stack application using MERN stack as per the client's request."
           }
         />
         <ServiceItem
           icon={desktop}
-          title={"Game Development"}
+          title={"Flutter Development"}
           bg={theme.colorGreenDark}
           shadow={theme.shadowGreen}
           desc={
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil suscipit corrupti voluptates magnam, voluptatem aliquid laborum consectetur."
+            "I can also help to create a cross platform application using flutter for android, iOS as well as web platforms."
           }
         />
         <ServiceItem
-          icon={code}
-          title={"Web Development"}
+          icon={design}
+          title={"Web Design"}
           shadow={theme.shadowPrimary}
           bg={theme.colorPrimary}
           desc={
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil suscipit corrupti voluptates magnam, voluptatem aliquid laborum consectetur."
+            "I can create responsive, simple yet attractive UI as per the client's request."
           }
         />
       </div>

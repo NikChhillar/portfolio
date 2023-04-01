@@ -10,8 +10,8 @@ const Experience = () => {
   return (
     <ExperienceStyled id="experience" theme={theme}>
       <Title
-        name={"Experince"}
-        desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}
+        name={"Skills"}
+        desc={""}
       />
       <div className="timeline-con">
         <Timeline />

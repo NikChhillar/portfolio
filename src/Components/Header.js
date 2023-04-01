@@ -2,9 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { useTheme } from "../context/themeContext";
 import Button from "../Components/Button";
-import { brief } from "../utils/Icons";
 import line from "../img/line.png";
-import beni from "../img/beni.png";
+import profile from "../img/profile.png";
 import Particle from "./Particle";
 
 const Header = ({ toggle, setToggle }) => {
@@ -37,22 +36,26 @@ const Header = ({ toggle, setToggle }) => {
             kotlin as well as cross platform development using Flutter.
           </p>
           <div className="btn-con">
-            <Button
-              name={"Hire Me"}
-              blob={"blob"}
-              bg={theme.colorPrimary}
-              color={theme.colorWhite}
-              bFw={"600"}
-              bRad={"30px"}
-              bPad={theme.bPad1}
-              icon={brief}
-            />
+            <a
+              target="blank"
+              href="https://www.linkedin.com/in/nikhil-chhillar2907/"
+            >
+              <Button
+                name={"Connect with Me"}
+                blob={"blob"}
+                bg={theme.colorPrimary}
+                color={theme.colorWhite}
+                bFw={"600"}
+                bRad={"30px"}
+                bPad={theme.bPad1}
+              />
+            </a>
           </div>
         </div>
       </div>
       <div className="right-header">
         <div className="image-con">
-          <img src={beni} alt="my-profile-pic" />
+          <img src={profile} alt="my-profile-pic" />
         </div>
         <div className="image-overlay"></div>
         <img src={line} alt="seperartion-line" className="image-line" />
@@ -176,8 +179,8 @@ const HeaderStyled = styled.header`
       display: none;
     }
     img {
+      margin-top: 80px;
       width: 600px;
-      margin-top: 195px;
       filter: grayscale(100%) drop-shadow(5px -5px 20px rgba(0, 0, 0, 0.65));
     }
   }
