@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { SectionLayout } from "../../styles/Layout";
 import { useTheme } from "../../context/themeContext";
 import Title from "../Title";
-import map from "../../img/map.png";
 import Button from "../Button";
 
 const Contact = () => {
@@ -12,13 +11,10 @@ const Contact = () => {
     <ContactStyled id="contact" theme={theme}>
       <Title
         name={"Lets Talk"}
-        desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}
+        desc={"..."}
       />
-
       <div className="contact-info">
-        <div className="map-section">
-          <img src={map} alt="" />
-        </div>
+
         <form action="" className="form-section">
           <div className="input-control">
             <input type="text" placeholder="Your name" />
@@ -62,15 +58,6 @@ const ContactStyled = styled(SectionLayout)`
     margin-top: 3rem;
     @media screen and (max-width: 973px) {
       flex-direction: column;
-    }
-    .map-section {
-      width: 40%;
-      position: relative;
-      img {
-        width: 100%;
-        object-fit: cover;
-        opacity: 0.1;
-      }
     }
     .form-section {
       flex: 1;

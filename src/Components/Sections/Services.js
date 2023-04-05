@@ -37,7 +37,7 @@ const Services = () => {
         />
         <ServiceItem
           icon={design}
-          title={"Web Design"}
+          title={"Frontend Development"}
           shadow={theme.shadowPrimary}
           bg={theme.colorPrimary}
           desc={

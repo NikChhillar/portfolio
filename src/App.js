@@ -29,6 +29,20 @@ function App() {
         <Contact />
       </main>
       <footer>
+        <div className="links">
+          <a href="https://github.com/NikChhillar" target="blank">
+            <i className=" fa-2x fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/nikhil-chhillar2907/"
+            target="blank"
+          >
+            <i className=" fa-2x fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://twitter.com/NikhilChhillar8" target="blank">
+            <i className=" fa-2x fa-brands fa-twitter"></i>
+          </a>
+        </div>
         <p>
           Copywright &copy; 2023{" "}
           <a target={"blank"} href="https://github.com/NikChhillar">
@@ -57,9 +71,24 @@ const AppStyled = styled.div`
   footer {
     height: 10vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: ${(props) => props.theme.colorBg2};
+    .links {
+      margin-top: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      i {
+        color: ${(props) => props.theme.colorGrey1};
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          color: ${(props) => props.theme.colorGreen};
+        }
+      }
+    }
     p {
       a {
         color: ${(props) => props.theme.colorPrimary};
