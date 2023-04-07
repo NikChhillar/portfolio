@@ -31,7 +31,12 @@ function App() {
       <footer>
         <div className="links">
           <a href="https://github.com/NikChhillar" target="blank">
-            <i className=" fa-2x fa-brands fa-github"></i>
+            <i
+              style={{
+                color: "#ff4c60",
+              }}
+              className=" fa-2x fa-brands fa-github"
+            ></i>
           </a>
           <a
             href="https://www.linkedin.com/in/nikhil-chhillar2907/"
@@ -40,7 +45,23 @@ function App() {
             <i className=" fa-2x fa-brands fa-linkedin"></i>
           </a>
           <a href="https://twitter.com/NikhilChhillar8" target="blank">
-            <i className=" fa-2x fa-brands fa-twitter"></i>
+            <i
+              style={{
+                color: "#ff4c60",
+              }}
+              className=" fa-2x fa-brands fa-twitter"
+            ></i>
+          </a>
+          <a href="https://www.instagram.com/its.nikhil__007/" target="blank">
+            <i className=" fa-2x fa-brands fa-instagram"></i>
+          </a>
+          <a href="mailto:nikhilchhillar29@gmail.com" target="blank">
+            <i
+              style={{
+                color: "#ff4c60",
+              }}
+              className=" fa-2x fa-brands fa-google"
+            ></i>
           </a>
         </div>
         <p>
@@ -69,14 +90,14 @@ const AppStyled = styled.div`
     line-height: 1.9rem;
   }
   footer {
-    height: 10vh;
+    height: 15vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: ${(props) => props.theme.colorBg2};
     .links {
-      margin-top: 8px;
+      margin-bottom: 8px;
       display: flex;
       justify-content: center;
       align-items: center;
