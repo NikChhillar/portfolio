@@ -7,18 +7,9 @@ import expense from "../img/expense.png";
 import blog from "../img/blog.png";
 import js1 from "../img/js1.png";
 import js2 from "../img/js2.png";
+import file from "../img/file.png";
 
 export const portfolios = [
-  {
-    id: uuid(),
-    category: "MERN Projects",
-    title: "Chat Application",
-    image: react1,
-    link1: "https://github.com/NikChhillar/chat-application",
-    link2: "https://github.com/NikChhillar/chat-application",
-    icon1: git,
-    icon2: eye,
-  },
   {
     id: uuid(),
     category: "React Projects",
@@ -46,6 +37,16 @@ export const portfolios = [
     image: expense,
     link1: "https://github.com/NikChhillar/mern-expense-tracker",
     link2: "https://github.com/NikChhillar/mern-expense-tracker",
+    icon1: git,
+    icon2: eye,
+  },
+  {
+    id: uuid(),
+    category: "MERN Projects",
+    title: "File sharing project",
+    image: file,
+    link1: "https://github.com/NikChhillar/mern-file-sharing",
+    link2: "https://github.com/NikChhillar/mern-file-sharing",
     icon1: git,
     icon2: eye,
   },
