@@ -9,7 +9,7 @@ import Title from "../Title";
 import Progressbar from "../Progressbar";
 import Stats from "../Stats";
 import Button from "../Button";
-import CV from '../../cv/cv.pdf'
+import CV from "../../cv/cv.pdf";
 
 const About = () => {
   const theme = useTheme();
@@ -22,13 +22,12 @@ const About = () => {
         <div className="about-content">
           <Title name={"About Me"} />
           <p>
-            Hi there! My name is Nikhil and I'm a 3rd year CSE Student,
-            curretnly learning full-stack development. I have been working in
-            this field since 2022. I'm skilled in a wide range of programming
-            languages and technologies, including MERN stack,react.js, node.js
-            and Flutter development . I can develop responsive, user-friendly
-            web applications that are optimized for speed and performance. I'm
-            always looking for ways to improve my skills.
+            As a third-year college student with a passion for web development,
+            I am excited to showcase my skills and experience in the field
+            through my portfolio. With a strong foundation in full-stack web
+            development, native Android development, and cross-platform app
+            development, I am confident in my ability to create dynamic and
+            engaging web projects that meet the needs of any organization.
           </p>
           <div className="progress-bars">
             <Progressbar
@@ -49,7 +48,11 @@ const About = () => {
           </div>
           <div className="btn-con">
             <Button
-              name={<a href={CV} download>Download CV</a>}
+              name={
+                <a href={CV} download>
+                  Download CV
+                </a>
+              }
               blob="blob"
               icon={download}
               bg={theme.colorPrimary}
