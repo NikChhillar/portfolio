@@ -9,6 +9,7 @@ import Title from "../Title";
 import Progressbar from "../Progressbar";
 import Stats from "../Stats";
 import Button from "../Button";
+import CV from '../../cv/cv.pdf'
 
 const About = () => {
   const theme = useTheme();
@@ -48,7 +49,7 @@ const About = () => {
           </div>
           <div className="btn-con">
             <Button
-              name="Download CV"
+              name={<a href={CV} download>Download CV</a>}
               blob="blob"
               icon={download}
               bg={theme.colorPrimary}

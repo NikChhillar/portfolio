@@ -15,12 +15,13 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs.sendForm('service_827ohfd', 'template_rmqqyai', form.current, 'tH2NwfOk-MbzH28jW')
+    emailjs.sendForm('service_827ohfd', 'template_z04k0da', form.current, 'tH2NwfOk-MbzH28jW')
       .then((result) => {
         console.log(result.text);
+        e.target.reset();
       }, (error) => {
         console.log(error.text);
+        e.target.reset();
       });
   };
 
