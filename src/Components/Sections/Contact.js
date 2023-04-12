@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import styled from "styled-components";
 import { SectionLayout } from "../../styles/Layout";
 import { useTheme } from "../../context/themeContext";
@@ -7,6 +8,23 @@ import Button from "../Button";
 
 const Contact = () => {
   const theme = useTheme();
+
+  // 
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_827ohfd', 'template_rmqqyai', form.current, 'tH2NwfOk-MbzH28jW')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+  };
+
+  // 
   return (
     <ContactStyled id="contact" theme={theme}>
       <Title
@@ -15,17 +33,17 @@ const Contact = () => {
       />
       <div className="contact-info">
 
-        <form action="" className="form-section">
+        <form ref={form} onSubmit={sendEmail} className="form-section">
           <div className="input-control">
-            <input type="text" placeholder="Your name" />
-            <input type="email" placeholder="Email address" />
+            <input name="name" type="text" placeholder="Your name" />
+            <input name="email" type="email" placeholder="Email address" />
           </div>
           <div className="input-control">
-            <input type="text" placeholder="Subject" />
+            <input name="subject" type="text" placeholder="Subject" />
           </div>
           <div className="input-control">
             <textarea
-              name=""
+              name="message"
               id=""
               cols="30"
               rows="6"
@@ -38,8 +56,8 @@ const Contact = () => {
               blob="blob"
               bg={theme.colorPrimary}
               color={theme.colorWhite}
+              onclick={sendEmail}
               bFw={"600"}
-              onClick="onClick"
               bRad={"30px"}
               bPad={theme.bPad1}
             />
