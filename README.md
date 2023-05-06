@@ -8,5 +8,7 @@ Live demo: [Nikhil Chhillar](https://portfolio-react-nikchhillar.vercel.app/)
 
 ![image](https://user-images.githubusercontent.com/90024300/235734621-c230c0b6-89de-46fc-b29d-4b5bd88a52b1.png)
 
+![Screenshot (125)](https://user-images.githubusercontent.com/90024300/236633528-24036bc8-3f35-4e23-9bbc-5ecbe794dbf7.png)
+
 
 
