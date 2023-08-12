@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
     }
     body{
         background-color: #1E1E1E;
-        font-family: cursive;
+        font-family: 'Roboto', sans-serif;
         font-size: clamp(1rem, 1.5vw, 1.2rem);
         overflow-x: hidden;
         &::-webkit-scrollbar{

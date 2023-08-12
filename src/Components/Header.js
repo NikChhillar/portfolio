@@ -32,7 +32,7 @@ const Header = ({ toggle, setToggle }) => {
           <p className="profession">Full-stack developer</p>
           <p className="description">
             I'm a 3rd year CSE Student. Currently working on full stack
-            development using MERN. I've worked on android development using
+            development using Nextjs 13.4. I've worked on MERN Stack, android development using
             kotlin as well as cross platform development using Flutter.
           </p>
           <div className="btn-con">
