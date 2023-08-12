@@ -10,20 +10,20 @@ const Timeline = () => {
     <TimelineStyled theme={theme}>
       <div className="education-timeline timeline">
         <TimelineItem desc={"React.js"} icon={education} />
+        <TimelineItem desc={"Next.js"} icon={education} />
         <TimelineItem desc={"Node.js"} icon={education} />
         <TimelineItem desc={"HTML/CSS"} icon={education} />
         <TimelineItem desc={"MongoDB"} icon={education} />
         <TimelineItem desc={"Flutter"} icon={education} />
-        <TimelineItem desc={"SQL"} icon={education} />
         <TimelineItem desc={"Git/Github"} icon={education} />
       </div>
       <div className="jobs-timeline timeline">
-        <h4>Programming Languages</h4>
         <TimelineItem desc={"JavaScript"} icon={code} />
         <TimelineItem desc={"Kotlin"} icon={code} />
         <TimelineItem desc={"Dart"} icon={code} />
         <TimelineItem desc={"C/C++"} icon={code} />
         <TimelineItem desc={"Java"} icon={code} />
+        <TimelineItem desc={"SQL"} icon={code} />
       </div>
     </TimelineStyled>
   );
